@@ -1,0 +1,78 @@
+.main-banner {
+  width: 100%;
+  padding: 2rem 0;
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+  gap: 0;
+  border: 1px solid lightblue;
+  background-image: url("../../assets/v7GvvTbuiCswDHXDxaPcKo.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 30vh;
+
+  & .main-banner__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1200px;
+    height: 100%;
+    width: max-content;
+    margin: 0 auto;
+    color: #1d1717;
+    padding: 0 2rem;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.8);
+
+    & h1 {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+    }
+
+    & button {
+      width: max-content;
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+    }
+  }
+}
+
+.main-banner__bottom {
+  background-color: #61dafb;
+
+  & div {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+
+    & p {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+
+      & .banner_icon {
+        font-size: 24px;
+      }
+    }
+  }
+}
+
+.newsletter {
+  width: 100%;
+  background: #fff;
+  padding: 2rem 0;
+  border: 1px solid lightgray;
+
+  & .newsletter__content {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+
+  }
+}

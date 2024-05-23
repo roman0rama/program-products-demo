@@ -1,0 +1,119 @@
+.product-modal {
+  position: fixed;
+  background-color: rgba(29, 23, 23, 0.5);
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 1001;
+  display: none;
+  transition: all 0.5s ease-in-out;
+
+
+  & .modal-content {
+    background-color: #fff;
+    color: #000;
+    width: max-content;
+    min-width: 500px;
+    padding: 40px 30px;
+    border-radius: 10px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+
+    & .modal-header {
+      width: max-content;
+      display: flex;
+      gap: 3rem;
+      flex-wrap: wrap;
+      & .img {
+        max-width: 170px;
+        max-height: 170px;
+      }
+
+      & .modal-img{
+        border-radius: 10px;
+        border: 1px solid lightgray;
+        height: 200px;
+        width: 200px;
+        background-color: rgba(237, 222, 222, 0.2);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+    }
+
+    & .modal-price {
+      display: flex;
+      gap: 10px;
+      font-size: 20px;
+      & .old-price {
+        text-decoration: line-through;
+        opacity: 0.5;
+        font-size: 16px;
+      }
+
+      & .modal-discount {
+        background-color: red;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        display: flex;
+        overflow: hidden;
+        height: max-content;
+        padding: 2px;
+        color: white;
+        font-size: 14px;
+      }
+    }
+
+    & .svg {
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      height: 24px;
+      width: 24px;
+      opacity: 0.3;
+      cursor: pointer;
+      transition: .4s;
+
+      &:hover {
+        opacity: 1;
+        transform: rotate(180deg);
+      }
+    }
+  }
+}
+
+.overlay.animated {
+  opacity: 0;
+  visibility: hidden;
+
+  .modal {
+    opacity: 0;
+    visibility: hidden;
+    transform: translate(-50%, -30%);
+    transition-delay: 0.2s;
+  }
+
+  &.show {
+    opacity: 1;
+    visibility: visible;
+
+    .modal {
+      opacity: 1;
+      visibility: visible;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+
+.open {
+  display: block;
+}

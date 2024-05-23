@@ -1,0 +1,32 @@
+.product_list {
+  align-items: center;
+}
+
+.filter {
+  display: flex;
+  gap: 1rem;
+}
+
+.category-title {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  padding: 1rem 0;
+  width: 50%;
+  border-bottom: 1px solid lightgray;
+
+  & div {
+    background: #ffacac;
+    width: 10px;
+    height: 50px;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+}
+
+.category-children {
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+  padding: 1em 0;
+}

@@ -1,0 +1,12 @@
+.email-input {
+  font-size: 18px;
+  border: none;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid lightgray;
+  color: #1d1717;
+  margin-right: 50px;
+
+  &:focus {
+    outline: none;
+  }
+}
